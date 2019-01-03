@@ -1,0 +1,14 @@
+@model IEnumerable<demoaspnetcli.Models.Studente>
+
+    <p>@Model.Count()</p>
+    <table>
+    </table>
+    @foreach (var item in Model)
+    {
+        <h3>@item.Nome</h3>
+    }
+@section myfooter {
+    <footer>
+        <p>&copy; 2019 - Blexin S.r.l. da Index</p>
+    </footer>
+}
